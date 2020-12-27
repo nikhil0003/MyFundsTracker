@@ -1,0 +1,7 @@
+{
+  "name": "MyFundsTracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
