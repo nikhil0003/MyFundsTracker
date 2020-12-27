@@ -1,0 +1,39 @@
+<ion-header >
+  <ion-toolbar color="secondary" >
+     <ion-title> <div class="heading">
+      Tracker
+     </div></ion-title>
+   </ion-toolbar>
+ </ion-header>
+ 
+ <!-- <ion-buttons slot="start">
+  <ion-button  href="/home">Back</ion-button>
+</ion-buttons> -->
+ <ion-content color="primary">
+   
+ 
+  <form (ngSubmit)="logForm()">
+  
+  <div class="div">
+
+ 
+    <ion-item style="margin-left: 10%; margin-right: 10%; ">
+      <ion-label position="floating">Enter EmailId</ion-label>
+      <ion-input ngDefaultControl [(ngModel)]="login.email" name="email"></ion-input>
+    </ion-item>
+    <ion-item style="margin-left: 10%; margin-right: 10%;">
+      <ion-label position="floating">Enter password</ion-label>
+      <ion-input type ="password"ngDefaultControl [(ngModel)]="login.password" name="password"></ion-input>
+    </ion-item>
+      <button ion-button type="submit" block style="   height: 50px;
+      width: 100px;
+      color: rgba(179, 188, 202, 0.479);
+      background: darkblue;
+      margin: 20%;">Add Todo</button>
+       </div>
+  
+    
+  </form>
+
+
+ </ion-content> 
